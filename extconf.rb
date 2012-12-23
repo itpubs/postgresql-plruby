@@ -52,7 +52,7 @@ def create_lang(version = 74, suffix = '', safe = 0)
 
 
    create function plruby#{suffix}_call_handler() returns #{opaque}
-   as '#{Config::CONFIG["sitearchdir"]}/plruby#{suffix}.#{CONFIG["DLEXT"]}'
+   as '#{RbConfig::CONFIG["sitearchdir"]}/plruby#{suffix}.#{RbConfig::CONFIG["DLEXT"]}'
    language '#{language}';
 
    create #{trusted} language 'plruby#{suffix}'
