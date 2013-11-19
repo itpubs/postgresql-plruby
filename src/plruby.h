@@ -7,6 +7,7 @@
 #include "executor/executor.h"
 #include "commands/trigger.h"
 #include "utils/elog.h"
+#include "utils/rel.h"
 #include "utils/builtins.h"
 #include "fmgr.h"
 #include "access/heapam.h"
@@ -33,6 +34,10 @@
 
 #if PG_PL_VERSION >= 81
 #include "utils/memutils.h"
+#endif
+
+#if PG_PL_VERSION >= 93
+#include "access/htup_details.h"
 #endif
 
 #include "package.h"
