@@ -2,6 +2,7 @@ Makefile
 mkmf.log
 src/Makefile
 src/*.so
+src/*.o
 src/conversions/*/plruby_*.so
 test/*/test.out
 test/*/test_mklang.sql
